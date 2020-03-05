@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Find the precious!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>FindThePrecious.com</li>
+                <li class="hov">Fellows</li>
+                <li class="hov">Contact us</li>
+            </ul>
+        </nav>
+        <section>
+            <div class="carousel"></div>
+        </section>
+        <section>
+            <h2 id="fellows">Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
+        </section>
+        <section id="sectart">
+            <article></article>
+            <article></article>
+            <article></article>        
+        </section>
+        <section id="secform">
+            <h2 id="contact">Contact us</h2>
+            <form>
+                <input type="email" placeholder="@" class="xform">
+                <input type="text" placeholder="&#8962;" class="xform">
+                <input type="text" placeholder="I have seen one of them" class="xform">
+                <textarea placeholder="Your message" class="xform"></textarea>
+                <input id="send" type="submit" value="Send !">
+            </form>
+      </section>
+      <footer>
+        <div>
+          <p>About us</p>
+          <p>Fellows</p>
+          <p>Join our army</p>
+        </div>
+        <div>
+          <p>FAQ</p>
+          <p>Reward conditions</p>
+          <p>Legal mentions</p>
+        </div>
+        <div>
+          <p>Sauron4Ever.com</p>
+          <p>Follow him also on twitter</p>
+        </div>
+      </footer>
+    </body>
+</html>
