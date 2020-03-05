@@ -1,0 +1,112 @@
+body{
+  width: 900px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #555151;
+  color: white;
+  height:30px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+li:first-child {
+  font-size: 25px;
+  margin-left: 0;
+  padding-right: 20px;
+}
+.hov{
+  padding: 0 20px;
+}
+
+.hov:hover{
+  background-color: #968e8e;
+  color: #555151;
+  padding: 8px 20px 4px 20px;
+}
+.carousel {
+  background-color: #cfc5c5;
+  height: 250px;
+}
+
+#sectart{
+  border-bottom: 2px #555151 solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 125px;
+  
+}
+#fellows{
+  text-align: center;
+}
+span{font-size: 18px;}
+
+article{
+  background-color: #cfc5c5;
+  height: 350px;
+  width: 280px;
+  margin-left: 10px;
+}
+#secform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+form{
+  display: flex;
+  width: 750px;
+  flex-direction: column;
+  align-self: center;
+}
+
+.xform{
+  margin-top: 5px;
+  width: 750px;
+  align-self: center;
+}
+#send{
+  background-color: #9c9797;
+  color: white;
+  align-self: flex-end;
+  width: 50px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+footer {
+  background-color: #3d3b3b;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > div > p {
+  color: white;
+}
+
+@media screen and (max-width: 961px){
+
+#sectart{
+  flex-direction: column;
+  align-items: center;
+}
+article{
+  margin-bottom: 15px;
+  width: 80%;
+}
+#contact{
+  align-self: center;
+}
+footer{
+  flex-direction: column;
+  align-items: center;
+}
+footer div {
+  text-align: center;
+}
+}
