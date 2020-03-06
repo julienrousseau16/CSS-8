@@ -1,5 +1,5 @@
 body{
-  width: 900px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@ span{font-size: 18px;}
 article{
   background-color: #cfc5c5;
   height: 350px;
-  width: 280px;
+  width: 30%;
   margin-left: 10px;
 }
 #secform{
@@ -61,15 +61,15 @@ article{
 
 form{
   display: flex;
-  width: 750px;
   flex-direction: column;
   align-self: center;
+  width: 90%;
 }
 
 .xform{
   margin-top: 5px;
-  width: 750px;
   align-self: center;
+  width: 100%;
 }
 #send{
   background-color: #9c9797;
@@ -97,16 +97,16 @@ footer > div > p {
 }
 article{
   margin-bottom: 15px;
-  width: 80%;
+  width: 90%;
 }
 #contact{
   align-self: center;
 }
+
 footer{
   flex-direction: column;
   align-items: center;
 }
 footer div {
   text-align: center;
-}
 }
