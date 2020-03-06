@@ -1,54 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Find the precious!</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <nav>
-            <ul>
-                <li>FindThePrecious.com</li>
-                <li class="hov">Fellows</li>
-                <li class="hov">Contact us</li>
-            </ul>
-        </nav>
-        <section>
-            <div class="carousel"></div>
-        </section>
-        <section>
-            <h2 id="fellows">Fellows wanted dead <span>(or alive if you want to eat them later)</span></h2>
-        </section>
-        <section id="sectart">
-            <article></article>
-            <article></article>
-            <article></article>        
-        </section>
-        <section id="secform">
-            <h2 id="contact">Contact us</h2>
-            <form>
-                <input type="email" placeholder="@" class="xform">
-                <input type="text" placeholder="&#8962;" class="xform">
-                <input type="text" placeholder="I have seen one of them" class="xform">
-                <textarea placeholder="Your message" class="xform"></textarea>
-                <input id="send" type="submit" value="Send !">
-            </form>
-      </section>
-      <footer>
-        <div>
-          <p>About us</p>
-          <p>Fellows</p>
-          <p>Join our army</p>
-        </div>
-        <div>
-          <p>FAQ</p>
-          <p>Reward conditions</p>
-          <p>Legal mentions</p>
-        </div>
-        <div>
-          <p>Sauron4Ever.com</p>
-          <p>Follow him also on twitter</p>
-        </div>
-      </footer>
-    </body>
-</html>
+body{
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #555151;
+  color: white;
+  height:30px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+li:first-child {
+  font-size: 25px;
+  margin-left: 0;
+  padding-right: 20px;
+}
+.hov{
+  padding: 0 20px;
+}
+
+.hov:hover{
+  background-color: #968e8e;
+  color: #555151;
+  padding: 8px 20px 4px 20px;
+}
+.carousel {
+  background-color: #cfc5c5;
+  height: 250px;
+}
+
+#sectart{
+  border-bottom: 2px #555151 solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 125px;
+  
+}
+#fellows{
+  text-align: center;
+}
+span{font-size: 18px;}
+
+article{
+  background-color: #cfc5c5;
+  height: 350px;
+  width: 30%;
+  margin-left: 10px;
+}
+#secform{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+form{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+}
+
+.xform{
+  margin-top: 5px;
+  align-self: center;
+  width: 100%;
+}
+#send{
+  background-color: #9c9797;
+  color: white;
+  align-self: flex-end;
+  width: 50px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+footer {
+  background-color: #3d3b3b;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer > div > p {
+  color: white;
+}
+
+@media screen and (max-width: 961px){
+
+#sectart{
+  flex-direction: column;
+  align-items: center;
+}
+article{
+  margin-bottom: 15px;
+  width: 90%;
+}
+#contact{
+  align-self: center;
+}
+
+footer{
+  flex-direction: column;
+  align-items: center;
+}
+footer div {
+  text-align: center;
+}
